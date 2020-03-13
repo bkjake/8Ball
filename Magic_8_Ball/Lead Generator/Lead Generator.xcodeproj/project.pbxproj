@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65D2E4ED23318E8900F34401 /* Lead_Generator.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 65D2E4EC23318E8900F34401 /* Lead_Generator.entitlements */; };
+		65D2E4EF23318E8900F34401 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2E4EE23318E8900F34401 /* AppDelegate.swift */; };
+		65D2E4F223318E8900F34401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D2E4F023318E8900F34401 /* Main.storyboard */; };
+		65D2E4F423318E8900F34401 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2E4F323318E8900F34401 /* ViewController.swift */; };
+		65D2E4F623318E8C00F34401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D2E4F523318E8C00F34401 /* Assets.xcassets */; };
+		65D2E4FD23318E8D00F34401 /* Lead Generator Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 65D2E4FC23318E8D00F34401 /* Lead Generator Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		65D2E50223318E8D00F34401 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D2E50123318E8D00F34401 /* Cocoa.framework */; };
+		65D2E50523318E8D00F34401 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2E50423318E8D00F34401 /* SafariExtensionHandler.swift */; };
+		65D2E50723318E8D00F34401 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D2E50623318E8D00F34401 /* SafariExtensionViewController.swift */; };
+		65D2E50A23318E8D00F34401 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D2E50823318E8D00F34401 /* SafariExtensionViewController.xib */; };
+		65D2E50D23318E8D00F34401 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 65D2E50C23318E8D00F34401 /* script.js */; };
+		65D2E50F23318E8D00F34401 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 65D2E50E23318E8D00F34401 /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65D2E4FE23318E8D00F34401 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65D2E4E123318E8900F34401 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65D2E4FB23318E8D00F34401;
+			remoteInfo = "Lead Generator Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65D2E51623318E8D00F34401 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				65D2E4FD23318E8D00F34401 /* Lead Generator Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		65D2E4E923318E8900F34401 /* Lead Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lead Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D2E4EC23318E8900F34401 /* Lead_Generator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lead_Generator.entitlements; sourceTree = "<group>"; };
+		65D2E4EE23318E8900F34401 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65D2E4F123318E8900F34401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65D2E4F323318E8900F34401 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65D2E4F523318E8C00F34401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65D2E4F723318E8C00F34401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D2E4FC23318E8D00F34401 /* Lead Generator Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lead Generator Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D2E50123318E8D00F34401 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		65D2E50423318E8D00F34401 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		65D2E50623318E8D00F34401 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		65D2E50923318E8D00F34401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		65D2E50B23318E8D00F34401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D2E50C23318E8D00F34401 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		65D2E50E23318E8D00F34401 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		65D2E51023318E8D00F34401 /* Lead_Generator_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lead_Generator_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65D2E4E623318E8900F34401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D2E4F923318E8D00F34401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2E50223318E8D00F34401 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65D2E4E023318E8900F34401 = {
+			isa = PBXGroup;
+			children = (
+				65D2E4EB23318E8900F34401 /* Lead Generator */,
+				65D2E50323318E8D00F34401 /* Lead Generator Extension */,
+				65D2E50023318E8D00F34401 /* Frameworks */,
+				65D2E4EA23318E8900F34401 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65D2E4EA23318E8900F34401 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65D2E4E923318E8900F34401 /* Lead Generator.app */,
+				65D2E4FC23318E8D00F34401 /* Lead Generator Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65D2E4EB23318E8900F34401 /* Lead Generator */ = {
+			isa = PBXGroup;
+			children = (
+				65D2E4EC23318E8900F34401 /* Lead_Generator.entitlements */,
+				65D2E4EE23318E8900F34401 /* AppDelegate.swift */,
+				65D2E4F023318E8900F34401 /* Main.storyboard */,
+				65D2E4F323318E8900F34401 /* ViewController.swift */,
+				65D2E4F523318E8C00F34401 /* Assets.xcassets */,
+				65D2E4F723318E8C00F34401 /* Info.plist */,
+			);
+			path = "Lead Generator";
+			sourceTree = "<group>";
+		};
+		65D2E50023318E8D00F34401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65D2E50123318E8D00F34401 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65D2E50323318E8D00F34401 /* Lead Generator Extension */ = {
+			isa = PBXGroup;
+			children = (
+				65D2E50423318E8D00F34401 /* SafariExtensionHandler.swift */,
+				65D2E50623318E8D00F34401 /* SafariExtensionViewController.swift */,
+				65D2E50823318E8D00F34401 /* SafariExtensionViewController.xib */,
+				65D2E50B23318E8D00F34401 /* Info.plist */,
+				65D2E50C23318E8D00F34401 /* script.js */,
+				65D2E50E23318E8D00F34401 /* ToolbarItemIcon.pdf */,
+				65D2E51023318E8D00F34401 /* Lead_Generator_Extension.entitlements */,
+			);
+			path = "Lead Generator Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65D2E4E823318E8900F34401 /* Lead Generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D2E51723318E8D00F34401 /* Build configuration list for PBXNativeTarget "Lead Generator" */;
+			buildPhases = (
+				65D2E4E523318E8900F34401 /* Sources */,
+				65D2E4E623318E8900F34401 /* Frameworks */,
+				65D2E4E723318E8900F34401 /* Resources */,
+				65D2E51623318E8D00F34401 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65D2E4FF23318E8D00F34401 /* PBXTargetDependency */,
+			);
+			name = "Lead Generator";
+			productName = "Lead Generator";
+			productReference = 65D2E4E923318E8900F34401 /* Lead Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65D2E4FB23318E8D00F34401 /* Lead Generator Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D2E51323318E8D00F34401 /* Build configuration list for PBXNativeTarget "Lead Generator Extension" */;
+			buildPhases = (
+				65D2E4F823318E8D00F34401 /* Sources */,
+				65D2E4F923318E8D00F34401 /* Frameworks */,
+				65D2E4FA23318E8D00F34401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lead Generator Extension";
+			productName = "Lead Generator Extension";
+			productReference = 65D2E4FC23318E8D00F34401 /* Lead Generator Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65D2E4E123318E8900F34401 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Brian Jacobsen";
+				TargetAttributes = {
+					65D2E4E823318E8900F34401 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					65D2E4FB23318E8D00F34401 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 65D2E4E423318E8900F34401 /* Build configuration list for PBXProject "Lead Generator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65D2E4E023318E8900F34401;
+			productRefGroup = 65D2E4EA23318E8900F34401 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65D2E4E823318E8900F34401 /* Lead Generator */,
+				65D2E4FB23318E8D00F34401 /* Lead Generator Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65D2E4E723318E8900F34401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2E4ED23318E8900F34401 /* Lead_Generator.entitlements in Resources */,
+				65D2E4F623318E8C00F34401 /* Assets.xcassets in Resources */,
+				65D2E4F223318E8900F34401 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D2E4FA23318E8D00F34401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2E50F23318E8D00F34401 /* ToolbarItemIcon.pdf in Resources */,
+				65D2E50A23318E8D00F34401 /* SafariExtensionViewController.xib in Resources */,
+				65D2E50D23318E8D00F34401 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65D2E4E523318E8900F34401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2E4F423318E8900F34401 /* ViewController.swift in Sources */,
+				65D2E4EF23318E8900F34401 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D2E4F823318E8D00F34401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D2E50723318E8D00F34401 /* SafariExtensionViewController.swift in Sources */,
+				65D2E50523318E8D00F34401 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65D2E4FF23318E8D00F34401 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65D2E4FB23318E8D00F34401 /* Lead Generator Extension */;
+			targetProxy = 65D2E4FE23318E8D00F34401 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65D2E4F023318E8900F34401 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65D2E4F123318E8900F34401 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65D2E50823318E8D00F34401 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65D2E50923318E8D00F34401 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65D2E51123318E8D00F34401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65D2E51223318E8D00F34401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		65D2E51423318E8D00F34401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Lead Generator Extension/Lead_Generator_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RH47Z2YN7;
+				INFOPLIST_FILE = "Lead Generator Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "briankjacobsen.com.Lead-Generator-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		65D2E51523318E8D00F34401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Lead Generator Extension/Lead_Generator_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RH47Z2YN7;
+				INFOPLIST_FILE = "Lead Generator Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "briankjacobsen.com.Lead-Generator-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		65D2E51823318E8D00F34401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3RH47Z2YN7;
+				INFOPLIST_FILE = "Lead Generator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "briankjacobsen.com.Lead-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		65D2E51923318E8D00F34401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3RH47Z2YN7;
+				INFOPLIST_FILE = "Lead Generator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "briankjacobsen.com.Lead-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65D2E4E423318E8900F34401 /* Build configuration list for PBXProject "Lead Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D2E51123318E8D00F34401 /* Debug */,
+				65D2E51223318E8D00F34401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D2E51323318E8D00F34401 /* Build configuration list for PBXNativeTarget "Lead Generator Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D2E51423318E8D00F34401 /* Debug */,
+				65D2E51523318E8D00F34401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D2E51723318E8D00F34401 /* Build configuration list for PBXNativeTarget "Lead Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D2E51823318E8D00F34401 /* Debug */,
+				65D2E51923318E8D00F34401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65D2E4E123318E8900F34401 /* Project object */;
+}
